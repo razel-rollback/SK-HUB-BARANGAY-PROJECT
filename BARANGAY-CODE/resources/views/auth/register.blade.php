@@ -179,7 +179,7 @@
                 <div class="mb-3">
                     <div class="border-2 border-dashed border-gray-300 rounded-md p-4 text-center hover:bg-gray-50 transition cursor-pointer" id="upload-area">
                         <input type="file" name="id_image" id="id_image" 
-                            class="hidden" accept="image/jpeg,image/png,image/jpg,image/gif" required>
+                            class="hidden" accept="image/jpeg,image/png,image/jpg,image/gif">
                         <div id="upload-icon" class="mb-2">
                             <i class="fas fa-cloud-upload-alt text-gray-400 text-2xl"></i>
                         </div>
@@ -434,12 +434,7 @@
                     return;
                 }
                 
-                // Validate file upload
-                if (!fileInput.files || !fileInput.files[0]) {
-                    alert('Please upload a valid ID image.');
-                    e.preventDefault();
-                    return;
-                }
+               
                 
                 // Validate file type
                 const file = fileInput.files[0];

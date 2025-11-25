@@ -55,7 +55,7 @@ class AuthController extends Controller
             'birth_date' => 'required|date|before:today|after:' . date('Y-m-d', strtotime('-150 years')),
             'sex' => 'required|in:Male,Female',
             'is_pwd' => 'nullable|boolean',
-            'id_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'id_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
         // Handle file upload
